@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="carrito">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <div class="lista_de_cursos">
+                    </div>
+                    <div class="total">
+                        <p>Total: <span id="total-price">S/0.00</span></p>
+                        <p>Productos: <span id="total-count">0</span></p>
+                    </div>
+                    <button id="vaciar_carrito">VACIAR CARRITO</button>
+                    <button id="comprar_carrito">COMPRAR</button>
+                </div>
+            </i>
+        </nav>
+        <h1>PRODUCTOS MÁS POPULARES</h1>
+        <div class="grid" id="lista-cursos">
+            <div class="items">
+                <img src="img2/produc1.png">
+                <div class="info">
+                    <h3>ESPUMA LIMPIADORA FACIAL</h3>
+                    <p>Contiene ciertos ingredientes naturales, la fórmula de la espuma 
+                        limpiadora facial SEYTÚ es ideal para una limpieza profunda.</p>
+                    <div class="precio">
+                        <p></p>
+                        <p class="descuento">S/98.00</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img2/produc2.png">
+                <div class="info">
+                    <h3>CREMA DE MANOS ANTIBACTERIAL VAINILLA</h3>
+                    <p>Tus manos entran en contacto con muchos elementos a lo largo del día. 
+                        Ahora puedes cuidarlas sin resecarlas.</p>
+                    <div class="precio">
+                        <p></p>
+                        <p class="descuento">S/16.50</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="2">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img2/produc3.png">
+                <div class="info">
+                    <h3>OMNIPLUS GEL PREMIUM</h3>
+                    <p>Omniplus Gel Premium colabora a mantener la piel protegida de los ataques 
+                        de los radicales libres y aumentar el nivel de hidratación.</p>
+                    <div class="precio">
+                        <p></p>
+                        <p class="descuento">S/94.00</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="3">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img2/produc4.png">
+                <div class="info">
+                    <h3>LOCIÓN CORPORAL FRUTOS ROJOS</h3>
+                    <p>Suaviza y nutre la piel con un delicado aroma a frutos rojos.</p>
+                    <div class="precio">
+                        <p></p>
+                        <p class="descuento">S/68.00</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="4">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img2/produc5.png">
+                <div class="info">
+                    <h3>BÁLSAMO LABIAL OMNIPLUS FPS15</h3>
+                    <p>Bálsamo labial con textura suave, cremosa y nutritiva.</p>
+                    <div class="precio">
+                        <p></p>
+                        <p class="descuento">S/74.00</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="5">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img2/produc6.png">
+                <div class="info">
+                    <h3>JABÓN LÍQUIDO EXFOLIANTE COCO VAINILLA</h3>
+                    <p>Limpia y exfolia delicadamente la piel del 
+                        cuerpo al remover las células muertas, dejándola suave y renovada.</p>
+                    <div class="precio">
+                        <p></p>
+                        <p class="descuento">S/66.00</p>
+                    </div>
+                    <button class="agregar-carrito" data-id="6">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PRODUCOSMETIC</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#home"><img src="img/logo.png" width="150" height="50"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#PRINCIPAL">INICIO</a></li>
+            <li><a href="#INICIO">¿QUÉ ES?</a></li>
+            <li><a href="#CATÁLOGO">CATÁLOGO</a></li>
+            <li><a href="contacto/contacto.html">CONTÁCTANOS</a></li>
+            <li><a href="carritodecompras/index2.html"><img src="img/carrito.png" width="40" alt="Carrito"></a></li>
+            <li><a href="formulario/index4.html"><img src="img/usuario.png" width="40" alt="Usuario"></a></li>
+        </ul>
+    </nav>
+    
+    <div id="PRINCIPAL" class="carousel">
+        <div class="carousel-images">
+            <img src="img/1.png" alt="Imagen 1">
+            <img src="img/2.png"  alt="Imagen 2">
+        </div>
+        <div class="carousel-indicators">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <main>
+        <section id="INICIO" class="section">
+            <img src="img/borde1.png" style="width:100%; margin: -10px 0;">
+            <h1 style="color: rgb(89, 0, 255); font-size: 40px;" >¿QUÉ ES SEYTÚ?</h1>
+            <article>
+                <p style="font-size: 20px;"></br><b>Seytú</b> es una marca innovadora en el mundo de la nutri-cosmética que fusiona ciencia
+                    y naturaleza para ofrecer productos de belleza efectivos y éticos. Sus productos no solo embellecen, sino que 
+                    también cuidan tu piel de una manera integral, brindando beneficios a largo plazo. 
+                    Algunos de los aspectos más destacados de Seytú incluyen:</br></br></p>
+                <ul style="font-size: 20px;">
+                    <li><b>Ingredientes naturales y seguros</b>: Todos los productos están formulados con ingredientes de origen natural, 
+                        asegurando una experiencia de belleza más pura y respetuosa con tu piel. 
+                        Además, están libres de parabenos y químicos dañinos, lo que los hace ideales para pieles sensibles.</li>
+                    <li><b>Compromiso con el bienestar animal</b>: Seytú se destaca por su firme compromiso con la no experimentación 
+                        en animales. Esto refleja su ética y conciencia social, 
+                        convirtiéndolos en la opción preferida por consumidores conscientes y responsables.</li>
+                    <li><b>Nutrición y protección</b>: Los productos de Seytú no solo ofrecen resultados inmediatos, sino que también mejoran 
+                        la salud de tu piel a largo plazo. Muchos de ellos contienen propiedades 
+                        antioxidantes que protegen la piel de los daños ambientales y retrasan el envejecimiento prematuro.</li>
+                </ul>
+                <p style="font-size: 20px;"></br>Al elegir Seytú, no solo estás mejorando tu belleza externa, sino también tu 
+                    bienestar integral, contribuyendo a un mundo más ético, saludable y sostenible. Además, <b>estamos presentes 
+                    en más de 18 países</b>, 
+                    llevando nuestra filosofía de belleza responsable a todo el mundo.</br></br></p>
+            </article>
+            <img src="img/borde2.png" style="width:100%;">
+        </section>
+        <section id="CATÁLOGO" class="section">
+            <div class="catalogo-seytu" style="margin: 0; padding: 0;">
+                <div class="background-container">
+                    <div class="content" class="cta">
+                        <h2 style="color: rgb(255, 255, 255)" >Catálogo Seytú</h2>
+                        <p>¡Descubre el secreto de una belleza radiante con solo un clic! Explora nuestro exclusivo catálogo de productos Seytú y sumérgete en un mundo donde la calidad y el cuidado de la piel van de la mano. Haz clic aquí para acceder a una colección cuidadosamente seleccionada, diseñada para nutrir, proteger y embellecer tu piel con lo mejor de la naturaleza. ¡No esperes más, tu viaje hacia una piel más saludable y radiante comienza ahora!</p>
+                        <a href="https://catalogo.seytu.com/peru/?page=1" class="btn-primary">Ver Catálogo</a>
+                    </div>
+                </div>                
+            </div>
+            <img src="img/borde1.png" style="width:100%; margin: 10px 0;" >
+        </section>
+        <section class="section">
+            <p></br></p>
+            </style>
+            <h2 class="section-title">CARACTERÍSTICAS DE LOS PRODUCTOS SEYTÚ</h2>
+            <div class="features-container">
+                <div class="feature-item">
+                    <img src="img/biodegradable.png" alt="Biodegradable">
+                    <h3>Biodegradables</h3>
+                    <p>Cuando veas este icono en alguno de nuestros productos, es porque el envase es biodegradable. 
+                        Es decir, que puede desintegrarse de forma natural y sin causar perjuicios en el medio ambiente.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/plastico-vegetal.png" alt="Plástico Vegetal">
+                    <h3>Plástico Vegetal</h3>
+                    <p>¡Cuidamos el medio ambiente! Parte de nuestro portafolio está conformado por envases hechos con plástico de origen 
+                        vegetal, también conocidos como bioplásticos, provenientes de fuentes naturales como la caña de azúcar.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/fsc.png" alt="Certificación FSC">
+                    <h3>Certificación FSC</h3>
+                    <p>La certificación FSC garantiza las prácticas de manejo responsable de los bosques y reconoce que el aprovechar 
+                        los recursos de la madera contribuye a la conservación de la biodiversidad forestal.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/vegano.png" alt="Vegano">
+                    <h3>Vegano</h3>
+                    <p>El 90% de los productos en nuestro portafolio no incluyen ningún ingrediente de origen animal o derivado. 
+                        Nuestras fórmulas están compuestas de materias primas de origen natural.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/noanimales.png" alt="Cruelty Free">
+                    <h3>Cruelty Free</h3>
+                    <p>Queremos un mundo más consciente y menos egoísta. En SEYTÚ evitamos el sufrimiento animal en la fabricación de 
+                        nuestros cosméticos, el 100% de nuestro portafolio es libre de crueldad animal.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/sustentable.png" alt="Sustentable">
+                    <h3>Sustentable</h3>
+                    <p>Nuestro compromiso es contigo y con el entorno natural que nos rodea, éste procura productos cosméticos que 
+                        cuidan tu belleza sin descuidar al planeta. En SEYTÚ somos sustentables.</p>
+                </div>
+            </div>
+        </section>
+        <section id="SEYTU" class="section">
+            <img src="img/borde1.png" style="width:100%; padding: 10px 0;">
+            <h1 style="color: rgb(89, 0, 255); font-size: 40px;" >BENEFICIOS DE LOS PRODUCTOS SEYTÚ</h1>
+            <article>
+                <p style="font-size: 20px;"></br>
+                    En un mundo cada vez más consciente de la salud y la belleza natural, <b>Seytú</b> se destaca como una marca innovadora 
+                    en nutri-cosmética. Con productos que no solo embellecen, sino que también cuidan tu piel de manera ética y 
+                    responsable, 
+                    Seytú combina ciencia y naturaleza para ofrecer una experiencia única.</br></br></p>
+                <ul style="font-size: 20px;">
+                    <li><b>Ingredientes naturales</b>: Los productos Seytú están elaborados con componentes de origen natural, 
+                        ideales para una belleza más pura y respetuosa con tu piel.</li>
+                    <li><b>Sin parabenos ni químicos dañinos</b>: Garantizan una opción más segura y saludable para tu piel, 
+                        minimizando el riesgo de alergias e irritaciones.</li>
+                    <li><b>Compromiso Ético</b>: Todos los productos son cruelty-free, lo que refleja el compromiso de 
+                        Seytú con la no experimentación en animales y el respeto por el bienestar animal.</li>
+                    <li><b>Resistencia y durabilidad</b>: La línea nutri-cosmética de Seytú es resistente al agua y al sudor, 
+                        lo que la hace perfecta para mantener tu look en cualquier condición.</li>
+                    <li><b>Beneficios a largo plazo</b>: Más allá de la belleza, los productos están diseñados 
+                        para nutrir y mejorar la salud de tu piel, con efectos visibles a largo plazo.</li>
+                </ul>
+                <p style="font-size: 20px;"></br><b>Seytú</b> no es solo cosmética, es un compromiso con la salud, 
+                    el bienestar y un futuro más sostenible, adaptándose a las necesidades de cada persona.</p>
+            </article>
+            <img src="img/borde2.png" style="width:100%;">
+        </section>
+        <section id="SEYTU" class="section">
+            <img src="img/borde1.png" style="width:100%; display: block; margin: 0; padding: 0;">
+            <h1 style="color: rgb(89, 0, 255); font-size: 40px;" >¿CÓMO COMPRAR TUS PRODUCTOS SEYTÚ?</h1>
+            <article>
+                <p style="font-size: 20px;">Recuerda que tienes dos opciones para comprar tus productos
+                    Omnilife: como <b>Cliente Admirable</b> con una membresía gratis, o
+                    como <b>Afiliado a Omnilife</b> con una membresía paga. 
+                    Ambas opciones están diseñadas para adaptarse a tus necesidades y preferencias de compra.</p>
+                    <div class="container2">
+                        <div class="option">
+                            <h2>Cliente Admirable</h2>
+                            <p>Al elegir esta opción, disfrutarás de una membresía gratuita que te permitirá comprar productos Omnilife a precios accesibles al público. 
+                                Es perfecta si deseas probar nuestros productos sin compromisos a largo plazo.</p>
+                            <div class="image-container2">
+                                <a href="https://portal.omnilife.com/registro-cliente?distributor_code=511287750BQA&country_code=PER&lang=es" target="_blank"></a>
+                                <img src="img/clienteadmirable.png" alt="Cliente Admirable">
+                            </div>
+                            <a href="https://portal.omnilife.com/registro-cliente?distributor_code=511287750BQA&country_code=PER&lang=es" class="btn">Registro Cliente</a>
+                        </div>
+                
+                        <div class="option">
+                            <h2>Afiliado a Omnilife</h2>
+                            <p>Si optas por ser un Afiliado, con tu membresía paga no solo obtendrás descuentos en tus compras, sino también la oportunidad de formar parte de una red dinámica de empresarios, beneficiándote de bonificaciones, incentivos y un potencial ingreso adicional.</p>
+                            <div class="image-container2">
+                                <a href="https://portal.omnilife.com/registro?distributor_code=511287750BQA&country_code=PER&lang=es" target="_blank"></a>
+                                <img src="img/afiliacion.png" alt="Afiliado a Omnilife">
+                            </div>
+                            <a href="https://portal.omnilife.com/registro?distributor_code=511287750BQA&country_code=PER&lang=es" class="btn">Registro Empresario</a>
+                        </div>
+                    </div>
+            </article>
+            <img src="img/borde2.png" style="width:100%;">
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PRODUCOSMETIC - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

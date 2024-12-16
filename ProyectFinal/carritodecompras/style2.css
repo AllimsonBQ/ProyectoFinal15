@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background-color: #f5f3f3;
+}
+
+.container nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.nav-card {
+    display: none;
+}
+
+.container nav button {
+    display: none;
+}
+
+.nav-card li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container nav i:hover > .buy-card {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    background-color: #ffff;
+}
+
+.container nav i:hover .nav-card {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #e1e1e1;
+}
+
+.container nav i:hover .buy-card > button {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.container nav i:hover .buy-card > button:hover {
+    border: solid thin #494848;
+    transition: all .4s;
+}
+
+.container nav i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #222;
+}
+
+.grid {
+    display: grid;
+    max-width: 1100px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px,280px));
+    padding-bottom: 50px;
+}
+
+.items {
+    background-color: #6a1b9a;  
+    border: solid thin #e1e1e1;
+    color: #fff;  
+}
+
+.items img {
+    width: 100%;
+    height: 170px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    font-size: 1.4rem; 
+    color: #fff;  
+}
+
+.info p {
+    font-size: 1.4rem;
+    color: #fff;  
+}
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.precio p {
+    font-size: 1.6rem; 
+    color: #fff;  
+}
+
+.info h3,
+.info p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.precio p:first-child {
+    text-decoration: line-through;
+}
+
+.info button {
+    padding: 1rem;
+    width: 100%;
+    background-color: #33c3f0;
+    border: none;
+    outline: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.info button:hover {
+    background-color: #2da0c3;
+    transition: all .3s;
+}
+
+.lista_de_cursos div {
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-top: solid thin gray;
+}
+
+.container nav i:hover .buy-card > .lista_de_cursos div {
+    display: flex;
+}
+
+.lista_de_cursos img {
+    width: 100px;
+}
+
+.lista_de_cursos p {
+    width: 300px;
+    font-size: 1.2rem; 
+}
+
+.lista_de_cursos p:nth-child(4),
+.contenedor-cursos p:nth-child(4) {
+    color: #000000 !important;  
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.lista_de_cursos p:last-child span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.contenedor-cursos {
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-top: solid thin gray;
+}
+
+.container nav i:hover .buy-card > .contenedor-cursos  {
+    display: flex;
+}
+
+.contenedor-cursos img{
+    width: 100px;
+}
+
+.contenedor-cursos p {
+    width: 300px;
+    font-size: 1.2rem; 
+}
+
+.contenedor-cursos :nth-child(4) {
+    padding-left: 40px;
+}
+
+.contenedor-cursos p:last-child span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.buy-card .lista_de_cursos p,
+.buy-card .contenedor-cursos p {
+    font-size: 1.2rem; 
+    color: #fff;  
+}
+
+.buy-card .lista_de_cursos h3,
+.buy-card .contenedor-cursos h3 {
+    font-size: 1.4rem; 
+    color: #fff;  
+}
+
+.buy-card .lista_de_cursos p:last-child,
+.buy-card .contenedor-cursos p:last-child {
+    font-size: 1.4rem; 
+    color: #ffffff;  
+}
+
+.total p {
+    font-size: 15px;  
+}
+
+.lista_de_cursos .item-carrito {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
+.lista_de_cursos .item-carrito p {
+    margin: 5px 0;
+}
+
+#total-price, #total-count {
+    font-weight: bold;
+}
+
+.item-carrito p:first-child {
+    color: #000000; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item-carrito p:nth-child(2) {
+    color: #000000; 
+    font-size: 12px;
+}
+
+.item-carrito p:nth-child(3) {
+    color: #000000; 
+    font-size: 12px;
+}
+
+.item-carrito p:nth-child(3) {
+    color: #000000; 
+    font-size: 12px;
+    margin-left: 10px; 
+}
+
+#total-count {
+    color: #000000 !important;  
+    font-weight: bold; 
+}
+

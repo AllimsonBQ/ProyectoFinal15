@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <section class="contact-container">
+        <header class="contact-header">
+            <img src="contacto.png" alt="contacto" style="width:100%; margin: 0; padding: 0;">
+            <p>Si tienes preguntas, dudas, comentarios o deseas asesoramiento para afiliarte o comprar productos, por favor contáctanos por WhatsApp, correo electrónico o mediante el formulario ubicado en la parte de abajo.</p>
+        </header>
+        
+        <section class="contact-info">
+            <h2>INFORMACIÓN DE CONTACTO</h2>
+            <p><strong>Correo:</strong> <a href="mailto:allimsonjulissa13@gmail.com">allimsonjulissa13@gmail.com</a></p>
+            <p><strong>WhatsApp:</strong> <a href="tel:+51983841459">+51 983 841 459</a></p>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Déjanos tus datos y nos comunicaremos contigo</h2>
+            <form action="guardar_datos.php" method="POST">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <select name="country" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="peru">Perú</option>
+                    <option value="mexico">México</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="chile">Chile</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="guatemala">Guatemala</option>
+                    <option value="repdom">República Dominicana</option>
+                </select>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <input type="tel" name="phone" placeholder="Celular (móvil)" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </section>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const success = urlParams.get('success');
+        if (success === '1') {
+            alert('¡Datos enviados exitosamente!');
+        }
+        if (success === '0') {
+            alert('Hubo un error al enviar los datos. Intenta nuevamente.');
+        }
+    </script>
+</body>
+</html>
